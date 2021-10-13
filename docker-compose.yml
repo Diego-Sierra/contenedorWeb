@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  asir_apachett:
+    image: httpd
+    ports:
+      - 5344:80
+    volumes:
+      - ./htcdocs:/usr/local/apache2/htdocs
